@@ -1,0 +1,20 @@
+@import "../../sass/mixin.scss";
+@import "../../sass/variable.scss";
+
+.nav {
+    float: left;
+    @include size(auto, $header-height);
+
+    li {
+        float: left;
+        @include size(auto, $header-height);
+        line-height: $header-height;
+        padding: 0 15px;
+        cursor: pointer;
+
+        &:hover {
+        	background-color: $bgColor700;
+        	color: $fColor700;
+        }
+    }
+}
